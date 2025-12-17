@@ -1,0 +1,9 @@
+# Reflection
+
+One part of this project that I feel most confident about is the overall architecture design and data flow. Designing a system that collects patient-reported uterine fibroid symptom data and converts it into summarized metrics felt realistic and closely aligned with cloud concepts covered in this course. The separation between raw data storage and summarized data in a managed SQL database helped reinforce how cloud services can be organized to support healthcare analytics workflows.
+
+The area I feel least confident about is how this system would scale in a real-world environment with a large number of patients submitting data frequently. While the current design works well for batch processing and summary analytics, additional services such as event-driven processing or message queues might be required for higher data volumes. These components were left out to keep the project within a reasonable scope.
+
+An alternative architecture that I considered was a real-time streaming approach where symptom data is processed immediately as it is submitted. While this design could support faster alerts and near-real-time monitoring, it would introduce more complexity, higher costs, and additional security considerations. For this project, a simpler batch-based approach was more appropriate and easier to justify.
+
+If I had additional time and resources, I would expand this project by adding visualization dashboards to display symptom trends over time and implementing basic alerting for significant changes in symptom severity. I would also explore integrating this system with other healthcare data sources and applying more advanced analytics to support population-level insights. Overall, this project helped strengthen my understanding of how cloud infrastructure can be applied to healthcare data in a practical and scalable way.
